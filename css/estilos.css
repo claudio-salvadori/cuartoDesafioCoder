@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -5,14 +6,50 @@
 html{
     font-size: 62.5%;
 }
-/* css de inicio */
+/* css de Inicio */
+/* Primer Panel */
 .primerPanelInicio{
     background-image: url(../imagenes/OrquídeaInicio.jpg);
-    padding: 3rem;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
+    background-size: 50%;
     height: 29rem;
-    width: 87%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.primerPanelInicioCaja{
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tituloPrimerPanel{
+    color: #007145;
+    font-family: Roboto, sans-serif;
+    font-size: 2.3rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.botonPrimerPanel{
+    text-align: center;
+    margin-top: 1rem;
+    margin-right: 6rem;
+    margin-left: 6rem;
+    background-color: #007145;
+    font-size: 1.6rem;
+    color: white;
+    padding: 1rem;
+    border-radius: 1.2rem;
+    transition-duration: 0.1s;
+    border: solid;
+    border-color: #007145;
+
+}
+.botonPrimerPanel:hover{
+    background-color: white;
+    color: #007145;
 }
 .nosotros{
     grid-area: Nosotros;
