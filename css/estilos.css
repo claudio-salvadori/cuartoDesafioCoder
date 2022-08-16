@@ -1,0 +1,413 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+/* css generales, top bar y footer*/
+.botonesNavegacion{
+    padding: 2rem;
+    background-color: white;
+    text-align: center;
+    word-spacing: 1rem;
+    justify-items: center;
+    grid-area: nav;
+}
+li{
+    display: inline-block;
+    padding-right: 1.5rem;
+}
+a{
+    text-decoration: none;
+    color: #007145;
+}
+.topbarIconos{
+    grid-area: topbarIconos;
+    text-align: center;
+    justify-items: center;
+}
+.hotSale{
+    padding: 0.5rem;
+    background-color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    grid-area: hotSale;
+}
+.topbarImagen{
+    padding: 0.5rem;
+    height: 2rem;
+    width: 2rem;
+    margin-top: 1.2rem;
+}
+.submenuInicio{
+    grid-area: submenuInicio;
+    text-align: right;
+}
+.topbar{
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    color: #007145;
+    grid-area: topbar;
+    display: grid;
+    grid-template-areas: "logoVivero submenuInicio submenuInicio"
+    "logoVivero nav topbarIconos";
+    grid-template-columns: 16% 62% 22%;
+}
+.logoVivero{
+    grid-area: logoVivero;
+}
+.logoViveroImagen{
+    height: 7rem;
+    width: 7rem;
+}
+.footerIconos{
+    grid-area: footerIconos;
+}
+.footerHorarios{
+    font-size: 1.2rem;
+    grid-area: footerHorarios;
+}
+.footerIconosImagen{
+    height: 2rem;
+    width: 2rem;
+}
+.footerTitulo{
+    padding: 2rem;
+    border: 2rem;
+}
+/* css de imagenes, titulosh1 y flex */
+.tituloNuestrosProductos{
+    padding: 2rem;
+    color: #007145;
+    font-size: 4rem;
+    grid-area: titulo;
+}
+.imagenProductos{
+    height: 13rem;
+    width: 13rem;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-color: #007145;
+}
+.productosDestacados{
+    padding: 2rem;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* css para cambiar más adelante */
+h2{
+    color: white;
+    background-color: green;
+    border-color:black solid;;
+    font-style: italic;
+    font-weight: bolder;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 2rem;
+}
+/* css de index */
+.seccionNosotros{
+    padding: 3rem;
+    background-image: url(../imagenes/Fondo_para_inicio.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 29rem;
+    width: 87%;
+}
+iframe{
+    grid-area: iframe;
+    height: 90%;
+    width: 90%;
+}
+.nosotros{
+    grid-area: Nosotros;
+}
+.productos{
+    grid-area: productos;
+}
+.tituloNosotros{
+    padding: 2rem;
+    margin-top: 1rem;
+    margin-right: 18rem;
+    color: white;
+    border-color:black solid;
+    background-color: rgb(81, 119, 18);
+    font-size: 3rem;
+}
+.textoNosotros{
+    padding: 3rem;
+    margin-right: 4rem;
+    background-color: white;
+    font-size: 1.6rem;
+    text-align: center;
+    grid-area: textoNosotros;
+}
+.tituloProductos{
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-right: 19rem;
+    text-align: left; 
+}
+.seccionAcuario{
+    background-image: url(../imagenes/Acuario.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 1.6rem;
+    color: white;
+    grid-area: seccionAcuario;
+}
+.tituloAcuario{
+    padding: 1rem;
+}
+.margenAcuario{
+    margin-left: 19rem;
+}
+/* css de productos */
+.seccionesProducto{     
+    display: flex;
+    /* probablemente cambie a grid cuando ponga el submenu */
+    flex-direction: column;
+    margin-left: 50rem;
+}
+.imagenInterior{
+    width: 82rem;
+    height: 68rem;
+}
+/* css de acuario */
+.formPecera{
+    padding: 2rem;
+    border-left: 4rem;
+    font-size: 1.6rem;
+}
+.formItem{
+    padding: 1.5rem;
+    color: #007145;
+}
+.seccionesAcuario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70rem;
+}
+/* Macetas */
+.fibrocemento{
+    grid-area: fibrocemento;
+}
+.macetasPlasticas{
+    grid-area: macetasPlasticas;
+}
+/* Contact */
+.descripcionContacto{
+    padding: 2rem;
+    margin: 2rem;
+    font-size: 1.6rem;
+    color: white;
+    background-color: #007145;
+}
+.formGrid{
+    font-size: 1.4rem;
+    display: grid;
+    grid-template-areas: "nombreApellido motivoConsulta"
+    "correoElectronico motivoConsulta" 
+    "telefono mensaje"
+    "ofertas mensaje"
+    "newsletter newsletter"
+    "botones botones";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 15% 15% 15% 10% 10%;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.nombreApellido{
+    padding: 1rem;
+    margin: 1rem;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-color: #007145;
+    grid-area: nombreApellido;
+    display: flex;
+    flex-direction: column;
+}
+.correoElectronico{
+    padding: 1rem;
+    margin: 1rem;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-color: #007145;
+    grid-area: correoElectronico;
+    display: flex;
+    flex-direction: column;
+}
+.telefono{
+    padding: 1rem;
+    margin: 1rem;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-color: #007145;
+    grid-area: telefono;
+    display: flex;
+    flex-direction: column;
+}
+.motivoConsulta{
+    padding: 1rem;
+    margin: 1rem;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-color: #007145;
+    grid-area: motivoConsulta;
+}
+.mensaje{
+    padding: 1rem;
+    margin: 1rem;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-color: #007145;
+    grid-area: mensaje;
+}
+.ofertas{
+    padding: 1rem;
+    margin: 1rem;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-color: #007145;
+    grid-area: ofertas;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.newsletter{
+    padding: 1rem;
+    margin: 1rem;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-color: #007145;
+    grid-area: newsletter;
+}
+.botones{
+    padding: 1rem;
+    margin: 1rem;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-color: #007145;
+    grid-area: botones;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/* css reponsive */
+.headerResponsive{
+    display: grid;
+    grid-template-areas: "hotSale"
+    "topbar";
+    grid-template-rows: 20% 70%;
+}
+.mainResponsive{
+    display: grid;
+    grid-template-areas: "seccionNosotros"
+                        "Nosotros"
+                        "productos" 
+                        "seccionAcuario";
+}
+.footerResponsive{
+    display: grid;
+    grid-template-areas: "footerHorarios"
+    "footerIconos";
+    grid-template-columns: 30%;
+    grid-template-rows: 48% 15%;
+    text-align: center;
+    background-image: url(../imagenes/Footer_imagen.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 2rem;
+    height: 30rem;
+}
+.mainResponsiveMacetas{
+    display: grid;
+    grid-template-areas: "titulo"
+    "fibrocemento"
+    "macetasPlasticas";
+}
+@media(min-width: 480px){
+    .headerResponsive{
+        grid-template-areas: "hotSale hotSale"
+                             "topbar topbar";
+        grid-template-columns: 20% 80%;
+    }
+    .botonesnavegacion{
+        padding: 1.5rem;
+    }
+    .mainResponsive{
+        grid-template-areas: "seccionNosotros Nosotros"
+        "productos productos"
+        "seccionAcuario seccionAcuario";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 39% 35% 38%;
+    }
+    .tituloNosotros{
+        margin-right: 0rem;
+        margin-left: 6rem;
+        margin-top: 0rem;
+    }
+    .textoNosotros{
+        margin-left: 6rem;
+        margin-right: 0rem;
+        padding: 2rem;
+    }
+    .productosDestacados{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .footerResponsive{
+        grid-template-areas: "footerHorarios footerHorarios"
+        "footerIconos footerIconos";
+        grid-template-columns: 15% 15%;
+        grid-template-rows: 50% 50%;
+    }
+    .mainResponsiveMacetas{
+        grid-template-areas: "titulo titulo"
+        "fibrocemento fibrocemento"
+        "macetasPlasticas macetasPlasticas";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 15% 42% 45%;
+    }
+}
+@media(min-width: 768px){
+    .headerResponsive{
+        grid-template-areas: "hotSale hotSale hotSale"
+                             "topbar topbar topbar";
+        grid-template-columns: 20% 20% 60%;
+    }
+    .mainResponsive{
+        grid-template-areas: "seccionNosotros Nosotros Nosotros"
+        "productos productos productos"
+        "seccionAcuario seccionAcuario seccionAcuario";
+        grid-template-columns: 50% 25% 25%;
+        grid-template-rows: 39% 35% 38%;
+    }
+    .footerResponsive{
+        grid-template-areas: "footerHorarios footerHorarios footerHorarios"
+        "footerIconos footerIconos footerIconos";
+        grid-template-columns: 10% 10% 10%;
+        grid-template-rows: 50% 50%;
+    }
+    .mainResponsiveMacetas{
+        grid-template-areas: "titulo titulo titulo"
+        "fibrocemento fibrocemento fibrocemento"
+        "macetasPlasticas macetasPlasticas macetasPlasticas";
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

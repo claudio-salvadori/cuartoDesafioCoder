@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="headerResponsive">
+            <div class="hotSale">
+                <p>
+                    Aprovecha el Hot Sale - ¡Hasta 50% en productos seleccionados!
+                </p>
+            </div>
+            <div class="topbar">
+                <div class="submenuInicio">
+                    <ul>
+                        <li>
+                            Preguntas frecuentes
+                        </li>
+                        <li>
+                            <a href="../secciones/contacto.html">Contacto</a>
+                        </li>
+                        <li>
+                            Iniciar sesión
+                        </li>
+                    </ul>
+                </div>
+                <div class="logoVivero">
+                    <a href="../index.html">
+                        <img src="../imagenes/Icono_Vivero.png" alt="Inicio" class="logoViveroImagen">
+                    </a>
+                </div>
+                <nav class="botonesNavegacion">
+                    <ul>
+                        <li>
+                            <a href="../secciones/productos.html">Productos</a>
+                        </li>
+                        <li>
+                            <a href="../secciones/acuario.html">Acuario</a>
+                        </li>
+                        <li>
+                            <a href="../secciones/macetas.html">Macetas</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="topbarIconos">
+                    <img src="../imagenes/Mi_carrito.png" alt="Mi carrito" class="topbarImagen">
+                    <img src="../imagenes/Mis favoritos.png" alt="Mis favoritos" class="topbarImagen">
+                    <img src="../imagenes/icons-búsqueda.svg" alt="Buscar productos" class="topbarImagen">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1 class="tituloNuestrosProductos">
+                Contáctenos
+            </h1>
+        </section>
+        <section>
+            <p class="descripcionContacto">
+                Escribanos su consulta y  nos pondremos en contacto con usted en las próximas 24hs
+            </p>
+            <article>
+                <form class="formGrid">
+                    <div class="nombreApellido">
+                        <label for="Nombre">Nombre y apellido:</label>	
+                        <input type="text" name="Nombre" placeholder="Escriba su nombre">
+                    </div>
+                    <div class="correoElectronico">
+                        <label for="Correo Electronico">Correo electrónico</label>
+                        <input type="email" placeholder="ejemplo@ejemplo.com" name="Correo Electronico">                 
+                    </div>
+                    <div class="telefono">
+                        <label for="telefono">Teléfono</label>
+                        <input type="number" name="telefono">         
+                    </div>
+                    <div class="ofertas">
+                        <label for="ofertas">¿Desea recibir ofertas por email?</label>
+                        <div>Acepto</div>
+                            <input type="radio" name="ofertas" value="sí">
+                        <div>No Acepto</div>
+                            <input type="radio" name="ofertas" value="no">
+                    </div>
+                    <div class="mensaje">
+                        <label for="Mensaje">Mensaje</label><br>
+                        <textarea type="text" name="Mensaje" placeholder="Escriba su mensaje"></textarea>
+                    </div>
+                    <div class="motivoConsulta">
+                        <label for="motivo consulta">Seleccione el motivo de su consulta</label>
+                        <select name="motivo consulta"> 
+                            <option value="x">Quiero saber cuándo va a haber stock de una planta, producto o accesorio</option>
+                            <option value="y">Compras al por mayor</option>
+                            <option value="z">Otros</option>
+                        </select>
+                    </div>
+                    <div class="newsletter">
+                        <label for="acepta"> ¿Desea suscribirse a nuestro newsletter?</label>
+                        <input type="checkbox" name="acepta" value="1">                   
+                    </div>
+                    <div class="botones">
+                        <input type="submit" value="Enviar mensaje">
+                        <input type="reset" value="Volver a comenzar">
+                        <input type="button" value="Volver atrás">
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer class="footerResponsive">
+        <section class="footerHorarios">
+            <h3 class="footerTitulo">
+                Horarios de atención
+            </h3>
+            <p>
+                Lunes a Viernes: 8:00 a 19:00
+            </p>
+            <p>
+                Sábados: 9:00 a 20:00
+            </p>
+            <p>
+                Domingos: 9:00 a 13:00
+            </p>
+        </section>
+        <div class="footerIconos">
+            <a href="https://www.facebook.com/viverolafe.villamadero">
+                <img src="../imagenes/facebook_footer.png" alt="Link a Facebook" class="footerIconosImagen">
+            </a>
+            <a href="https://www.instagram.com/viverolafe.villamadero/">
+                <img src="../imagenes/instagram_footer.png" alt="Link a Instagram" class="footerIconosImagen">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
