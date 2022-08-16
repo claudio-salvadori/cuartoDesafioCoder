@@ -5,6 +5,47 @@
 html{
     font-size: 62.5%;
 }
+/* css de inicio */
+.primerPanelInicio{
+    background-image: url(../imagenes/OrquídeaInicio.jpg);
+    padding: 3rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 29rem;
+    width: 87%;
+}
+.nosotros{
+    grid-area: Nosotros;
+}
+.productos{
+    grid-area: productos;
+}
+.tituloProductos{
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-right: 19rem;
+    text-align: left; 
+}
+.seccionAcuario{
+    background-image: url(../imagenes/Acuario.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 1.6rem;
+    color: white;
+    grid-area: seccionAcuario;
+}
+.tituloAcuario{
+    padding: 1rem;
+}
+.margenAcuario{
+    margin-left: 19rem;
+}
 /* css generales, top bar y footer*/
 .botonesNavegacion{
     padding: 2rem;
@@ -111,69 +152,6 @@ h2{
     font-family: sans-serif;
     text-align: center;
     font-size: 2rem;
-}
-/* css de index */
-.seccionNosotros{
-    padding: 3rem;
-    background-image: url(../imagenes/Fondo_para_inicio.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 29rem;
-    width: 87%;
-}
-iframe{
-    grid-area: iframe;
-    height: 90%;
-    width: 90%;
-}
-.nosotros{
-    grid-area: Nosotros;
-}
-.productos{
-    grid-area: productos;
-}
-.tituloNosotros{
-    padding: 2rem;
-    margin-top: 1rem;
-    margin-right: 18rem;
-    color: white;
-    border-color:black solid;
-    background-color: rgb(81, 119, 18);
-    font-size: 3rem;
-}
-.textoNosotros{
-    padding: 3rem;
-    margin-right: 4rem;
-    background-color: white;
-    font-size: 1.6rem;
-    text-align: center;
-    grid-area: textoNosotros;
-}
-.tituloProductos{
-    padding: 2rem;
-    margin-top: 2rem;
-    margin-right: 19rem;
-    text-align: left; 
-}
-.seccionAcuario{
-    background-image: url(../imagenes/Acuario.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-    height: 25rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
-    font-size: 1.6rem;
-    color: white;
-    grid-area: seccionAcuario;
-}
-.tituloAcuario{
-    padding: 1rem;
-}
-.margenAcuario{
-    margin-left: 19rem;
 }
 /* css de productos */
 .seccionesProducto{     
