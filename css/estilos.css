@@ -13,10 +13,8 @@ html{
     background-repeat: no-repeat;
     background-position: right;
     background-size: 50%;
-    height: 29rem;
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    grid-area: primerPanel;
 }
 .primerPanelInicioCaja{
     width: 50%;
@@ -24,6 +22,8 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
 }
 .tituloPrimerPanel{
     color: #007145;
@@ -34,23 +34,24 @@ html{
 }
 .botonPrimerPanel{
     text-align: center;
-    margin-top: 1rem;
-    margin-right: 6rem;
-    margin-left: 6rem;
+    width: 50%;
     background-color: #007145;
     font-size: 1.6rem;
     color: white;
-    padding: 1rem;
+    padding: 0.6rem;
     border-radius: 1.2rem;
     transition-duration: 0.1s;
     border: solid;
     border-color: #007145;
-
+    transition: background-color 0.4s, color 0.4s, width 0.4s;
 }
 .botonPrimerPanel:hover{
     background-color: white;
     color: #007145;
+    width: 60%;
 }
+/* Segundo panel Inicio */
+
 .nosotros{
     grid-area: Nosotros;
 }
@@ -332,8 +333,7 @@ h2{
 }
 .mainResponsive{
     display: grid;
-    grid-template-areas: "seccionNosotros"
-                        "Nosotros"
+    grid-template-areas: "primerPanel"
                         "productos" 
                         "seccionAcuario";
 }
@@ -366,7 +366,7 @@ h2{
         padding: 1.5rem;
     }
     .mainResponsive{
-        grid-template-areas: "seccionNosotros Nosotros"
+        grid-template-areas: "primerPanel primerPanel"
         "productos productos"
         "seccionAcuario seccionAcuario";
         grid-template-columns: 50% 50%;
@@ -407,7 +407,7 @@ h2{
         grid-template-columns: 20% 20% 60%;
     }
     .mainResponsive{
-        grid-template-areas: "seccionNosotros Nosotros Nosotros"
+        grid-template-areas: "primerPanel primerPanel primerPanel"
         "productos productos productos"
         "seccionAcuario seccionAcuario seccionAcuario";
         grid-template-columns: 50% 25% 25%;
