@@ -193,6 +193,10 @@ a:focus{
     color: white;
     text-align: center;
     grid-area: hotSale;
+    transition: color 0.4s;
+}
+.hotSale:hover{
+    color: #007145;
 }
 .topbarImagen{
     padding: 0.5rem;
@@ -221,11 +225,12 @@ a:focus{
     height: 7rem;
     width: 7rem;
 }
+/* Footer */
 .footerIconos{
     grid-area: footerIconos;
 }
 .footerHorarios{
-    font-size: 1.2rem;
+    font-size: 1rem;
     grid-area: footerHorarios;
 }
 .footerIconosImagen{
@@ -233,8 +238,9 @@ a:focus{
     width: 2rem;
 }
 .footerTitulo{
-    padding: 2rem;
-    border: 2rem;
+    padding: 1rem;
+    border: 1rem;
+    color: #007145;
 }
 /* css de imagenes, titulosh1 y flex */
 .tituloNuestrosProductos{
@@ -400,7 +406,7 @@ a:focus{
     background-repeat: no-repeat;
     background-size: 100%;
     margin-top: 2rem;
-    height: 30rem;
+    height: 16rem;
 }
 .mainResponsiveMacetas{
     display: grid;
@@ -422,27 +428,14 @@ a:focus{
         "segundoPanelInicio segundoPanelInicio"
         "tercerPanelInicio tercerPanelInicio";
         grid-template-columns: 50% 50%;
-        grid-template-rows: 39% 35% 38%;
-    }
-    .tituloNosotros{
-        margin-right: 0rem;
-        margin-left: 6rem;
-        margin-top: 0rem;
-    }
-    .textoNosotros{
-        margin-left: 6rem;
-        margin-right: 0rem;
-        padding: 2rem;
-    }
-    .productosDestacados{
-        flex-direction: row;
-        flex-wrap: wrap;
+        grid-template-rows: 39% 41% 25%;
     }
     .footerResponsive{
         grid-template-areas: "footerHorarios footerHorarios"
         "footerIconos footerIconos";
         grid-template-columns: 15% 15%;
         grid-template-rows: 50% 50%;
+        margin-top: 4rem;
     }
     .mainResponsiveMacetas{
         grid-template-areas: "titulo titulo"
@@ -463,18 +456,33 @@ a:focus{
         "segundoPanelInicio segundoPanelInicio segundoPanelInicio"
         "tercerPanelInicio tercerPanelInicio tercerPanelInicio";
         grid-template-columns: 50% 25% 25%;
-        grid-template-rows: 39% 35% 38%;
+        grid-template-rows: 39% 47% 43%;
     }
     .footerResponsive{
         grid-template-areas: "footerHorarios footerHorarios footerHorarios"
         "footerIconos footerIconos footerIconos";
         grid-template-columns: 10% 10% 10%;
         grid-template-rows: 50% 50%;
+        margin-top: 13rem;
     }
     .mainResponsiveMacetas{
         grid-template-areas: "titulo titulo titulo"
         "fibrocemento fibrocemento fibrocemento"
         "macetasPlasticas macetasPlasticas macetasPlasticas";
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .tercerPanelInicio{
+        background-size: 36%
+    }
+}
+@media(min-width: 1024px){
+    .primerPanelInicio{
+        background-size: 55rem;
+    }
+    .segundoPanelInicio{
+        background-size: 70rem;
+    }
+    .tercerPanelInicio{
+        background-size: 40rem;
     }
 }
