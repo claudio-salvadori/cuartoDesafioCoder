@@ -58,9 +58,9 @@ html{
 /* Segundo panel Inicio */
 .segundoPanelInicio{
     background-image: url(../imagenes/segundoPanelInicio.jpg);
-    background-size: 82%;
+    width: 100%;
     background-repeat: no-repeat;
-    background-position: initial;
+    background-position: center;
     grid-area: segundoPanelInicio;
 }
 .segundoPanelInicioCaja{
@@ -101,60 +101,29 @@ html{
 .segundoPanelInicioTitulo{
     font-family: Roboto, sans-serif;
     font-size: 2.3rem;
-    padding: 1rem;
-    text-align: right;
-    margin-top: 6rem;
-    margin-bottom: 9rem;
-    margin-left: 19rem;
+    padding: 2rem;
+    text-align: left;
+    margin-top: 3rem;
+    margin-left: 3rem;
     color: #007145;
     grid-area: segundoPanelInicioTitulo;
 }
 /* Tercer Panel Inicio */
 .tercerPanelInicio{
-    background-image: url(../imagenes/tercerPanelInicio.jpg);
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: left;
     grid-area: tercerPanelInicio;
     height: 25rem;
-}
-.tercerPanelInicioTitulo{
-    font-family: Roboto, sans-serif;
-    font-size: 2.3rem;
-    padding: 1rem;
-    text-align: center;
-    color: #007145;
-}
-.tercerPanelInicioCaja{
-    margin-left: 19rem;
-    margin-top: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
-    align-items: center;    font-size: 1.6rem;
-    color:#007145;
-    gap: 2rem;
-}
-.botonTercerPanel{
-    font-family: Roboto, sans-serif;
-    text-align: center;
-    width: 50%;
-    background-color: #007145;
     font-size: 1.6rem;
-    color: white;
-    padding: 0.6rem;
-    border-radius: 1.2rem;
-    transition-duration: 0.1s;
-    border: solid;
-    border-color: #007145;
-    transition: background-color 0.4s, color 0.4s, width 0.4s, font-size 0.4s;
+    color:#007145;
 }
-.botonTercerPanel:hover{
-    background-color: white;
-    color: #007145;
-    width: 60%;
-    font-size: 1.7rem;
+.tituloAcuario{
+    padding: 1rem;
+}
+.margenAcuario{
+    margin-left: 19rem;
 }
 /* css generales, top bar y footer*/
 .botonesNavegacion{

@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilos.css">
-    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Inicio - Vivero La Fe</title>
 </head>
 <body>
     <header>
@@ -57,7 +59,8 @@
         </div>
     </header>
     <main class="mainResponsive">
-        <section class="primerPanelInicio">
+        <section class="primerPanelInicio" data-aos="fade-up"
+        data-aos-duration="1000">
             <div class="primerPanelInicioCaja">
                 <h1 class="tituloPrimerPanel">
                     Cuidando tus plantas desde 1983
@@ -73,44 +76,60 @@
                 </div>
             </div>
         </section>
-        <section class="productos">
-            <h2 class="tituloProductos">
-                Productos Destacados
-            </h2>
-            <article class="productosDestacados">
-                <div>
-                    <img src="./imagenes/Orquídea.jpg" alt="Orquídea" class="imagenProductos">
-                    <p>
-                        Orquidea
-                    </p>
-                </div>
-                <div>
-                    <img src="./imagenes/venus_atrapamoscas.jpg" alt="Venus atrapamoscas" class="imagenProductos">
-                    <p>
-                        Venus Atrapamoscas
-                    </p>
-                </div>
-                <div>
-                    <img src="./imagenes/cactus_espiralado.jpg" alt="Cactus espiralado" class="imagenProductos">
-                    <p>
-                        Cactus Espiralado
-                    </p>
-                </div>
-            </article>
+        <section class="segundoPanelInicio" data-aos="fade-up"
+        data-aos-duration="1000">
+            <div class="segundoPanelInicioCaja">
+                <h2 class="segundoPanelInicioTitulo">
+                    Productos Destacados
+                </h2>
+                <article class="segundoPanelInicioCards">
+                    <div>
+                        <img src="./imagenes/Orquídea.jpg" alt="Orquídea" class="segundoPanelInicioImagenes">
+                        <div class="segundoPanelInicioCardsTexto">
+                            <p>
+                                Orquidea
+                            </p>                       
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./imagenes/venus_atrapamoscas.jpg" alt="Venus atrapamoscas" class="segundoPanelInicioImagenes">
+                        <div class="segundoPanelInicioCardsTexto">
+                            <p>
+                                Venus Atrapamoscas
+                            </p>                            
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./imagenes/cactus_espiralado.jpg" alt="Cactus espiralado" class="segundoPanelInicioImagenes">
+                        <div class="segundoPanelInicioCardsTexto">
+                            <p>
+                                Cactus Espiralado
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </section>
-        <section class="seccionAcuario">
-            <div class="margenAcuario">
-                <h2 class="tituloAcuario">
+        <section class="tercerPanelInicio" data-aos="fade-up"
+        data-aos-duration="1000">
+            <div class="tercerPanelInicioCaja">
+                <h2 class="tercerPanelInicioTitulo">
                     Acuario
                 </h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eligendi temporibus minus? Ullam magnam asperiores eaque, vel fuga amet facilis explicabo sint, quia error ipsa corrupti, iusto laborum! Voluptatibus, reiciendis!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eligendi temporibus minus? Ullam magnam asperiores eaque.
                 </p>
-                <input type="button" value="Conocé Más">
+                <div class="botonTercerPanel">
+                    <!-- ver de usar a ref para linkear con este texto-->
+                    <p>
+                        Conocé más
+                    </p> 
+                </div>
             </div>
         </section>
     </main>
-    <footer class="footerResponsive">
+    <footer class="footerResponsive" data-aos="fade-up"
+    data-aos-duration="1000">
         <section class="footerHorarios">
             <h3 class="footerTitulo">
                 Horarios de atención
@@ -134,5 +153,8 @@
             </a>
         </div>
     </footer>
-</body>>
+    <script>
+        AOS.init();
+    </script>
+</body>
 </html>
