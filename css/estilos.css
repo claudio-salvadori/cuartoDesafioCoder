@@ -7,7 +7,7 @@ html{
     font-size: 62.5%;
 }
 /* css de Inicio */
-/* Primer Panel */
+/* Primer Panel Inicio*/
 .primerPanelInicio{
     background-image: url(../imagenes/OrquídeaInicio.jpg);
     background-repeat: no-repeat;
@@ -155,6 +155,14 @@ html{
     color: #007145;
     width: 60%;
     font-size: 1.7rem;
+}
+/* css bootstrap */
+/* inicio sesión */
+.iniciarSesion{
+    background-color: white;
+}
+.alineacionDerecha{
+    text-align: right;
 }
 /* css generales, top bar y footer*/
 .botonesNavegacion{
