@@ -1,0 +1,99 @@
+/* Contact */
+.descripcionContacto{
+    padding: 2rem;
+    margin: 2rem;
+    font-size: 1.6rem;
+    color: white;
+    background-color: #007145;
+}
+.formGrid{
+    font-size: 1.4rem;
+    display: grid;
+    grid-template-areas: "nombreApellido motivoConsulta"
+    "correoElectronico motivoConsulta" 
+    "telefono mensaje"
+    "ofertas mensaje"
+    "newsletter newsletter"
+    "botones botones";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 15% 15% 15% 10% 10%;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.nombreApellido{
+    padding: 1rem;
+    margin: 1rem;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-color: #007145;
+    grid-area: nombreApellido;
+    display: flex;
+    flex-direction: column;
+}
+.correoElectronico{
+    padding: 1rem;
+    margin: 1rem;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-color: #007145;
+    grid-area: correoElectronico;
+    display: flex;
+    flex-direction: column;
+}
+.telefono{
+    padding: 1rem;
+    margin: 1rem;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-color: #007145;
+    grid-area: telefono;
+    display: flex;
+    flex-direction: column;
+}
+.motivoConsulta{
+    padding: 1rem;
+    margin: 1rem;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-color: #007145;
+    grid-area: motivoConsulta;
+}
+.mensaje{
+    padding: 1rem;
+    margin: 1rem;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-color: #007145;
+    grid-area: mensaje;
+}
+.ofertas{
+    padding: 1rem;
+    margin: 1rem;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-color: #007145;
+    grid-area: ofertas;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.newsletter{
+    padding: 1rem;
+    margin: 1rem;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-color: #007145;
+    grid-area: newsletter;
+}
+.botones{
+    padding: 1rem;
+    margin: 1rem;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-color: #007145;
+    grid-area: botones;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

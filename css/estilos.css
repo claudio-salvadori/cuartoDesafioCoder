@@ -1,16 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-/* css de Inicio */
-/* Primer Panel Inicio*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"); /* Primer Panel Inicio*/
 .primerPanelInicio {
   background-image: url(../imagenes/OrquídeaInicio.jpg);
   background-repeat: no-repeat;
@@ -174,6 +163,15 @@ html {
   color: #007145;
   width: 60%;
   font-size: 1.7rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 /* css bootstrap */

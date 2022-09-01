@@ -1,0 +1,149 @@
+/* Primer Panel Inicio*/
+.primerPanelInicio{
+    background-image: url(../imagenes/OrquídeaInicio.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50%;
+    width: 100%;
+    grid-area: primerPanelInicio;
+}
+.primerPanelInicioCaja{
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+}
+.tituloPrimerPanel{
+    color: #007145;
+    font-family: Roboto, sans-serif;
+    font-size: 2.3rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.textoPrimerPanel{
+    font-size: 1.7rem;
+}
+.botonPrimerPanel{
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    width: 50%;
+    background-color: #007145;
+    font-size: 1.6rem;
+    color: white;
+    padding: 0.6rem;
+    border-radius: 1.2rem;
+    transition-duration: 0.1s;
+    border: solid;
+    border-color: #007145;
+    transition: background-color 0.4s, color 0.4s, width 0.4s, font-size 0.4s;
+}
+.botonPrimerPanel:hover{
+    background-color: white;
+    color: #007145;
+    width: 60%;
+    font-size: 1.7rem;
+}
+/* Segundo panel Inicio */
+.segundoPanelInicio{
+    background-image: url(../imagenes/segundoPanelInicio.jpg);
+    background-size: 82%;
+    background-repeat: no-repeat;
+    background-position: initial;
+    grid-area: segundoPanelInicio;
+}
+.segundoPanelInicioCaja{
+    display: grid;
+    grid-template-areas: "segundoPanelInicioTitulo"
+    "segundoPanelInicioCards";
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    gap: 1rem;
+}
+.segundoPanelInicioImagenes{
+    height: 12rem;
+    width: 12rem;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-radius: 2rem;
+    border-color: #007145;
+}
+.segundoPanelInicioCards{
+    font-family: Roboto, sans-serif;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+    grid-area: segundoPanelInicioCards;
+}
+.segundoPanelInicioCardsTexto{
+    background-color: white;
+    width: 12rem;
+    height: 4.5rem;
+    text-align: center;
+    border-style: solid;
+    border-color: #007145;
+    border-width: 0.2rem;
+    border-radius: 2rem;
+}
+.segundoPanelInicioTitulo{
+    font-family: Roboto, sans-serif;
+    font-size: 2.3rem;
+    padding: 1rem;
+    text-align: right;
+    margin-top: 6rem;
+    margin-bottom: 9rem;
+    margin-left: 19rem;
+    color: #007145;
+    grid-area: segundoPanelInicioTitulo;
+}
+/* Tercer Panel Inicio */
+.tercerPanelInicio{
+    background-image: url(../imagenes/tercerPanelInicio.jpg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: left;
+    grid-area: tercerPanelInicio;
+    height: 25rem;
+}
+.tercerPanelInicioTitulo{
+    font-family: Roboto, sans-serif;
+    font-size: 2.3rem;
+    padding: 1rem;
+    text-align: center;
+    color: #007145;
+}
+.tercerPanelInicioCaja{
+    margin-left: 19rem;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;    font-size: 1.6rem;
+    color:#007145;
+    gap: 2rem;
+}
+.botonTercerPanel{
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    width: 50%;
+    background-color: #007145;
+    font-size: 1.6rem;
+    color: white;
+    padding: 0.6rem;
+    border-radius: 1.2rem;
+    transition-duration: 0.1s;
+    border: solid;
+    border-color: #007145;
+    transition: background-color 0.4s, color 0.4s, width 0.4s, font-size 0.4s;
+}
+.botonTercerPanel:hover{
+    background-color: white;
+    color: #007145;
+    width: 60%;
+    font-size: 1.7rem;
+}

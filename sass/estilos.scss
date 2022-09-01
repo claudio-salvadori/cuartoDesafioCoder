@@ -1,160 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import "variables";
+@import "responsive";
+@import "index";
+@import "contacto";
 *{
     padding: 0;
     margin: 0;
 }
 html{
     font-size: 62.5%;
-}
-/* css de Inicio */
-/* Primer Panel Inicio*/
-.primerPanelInicio{
-    background-image: url(../imagenes/OrquídeaInicio.jpg);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 50%;
-    width: 100%;
-    grid-area: primerPanelInicio;
-}
-.primerPanelInicioCaja{
-    width: 50%;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 1rem;
-    align-items: center;
-}
-.tituloPrimerPanel{
-    color: #007145;
-    font-family: Roboto, sans-serif;
-    font-size: 2.3rem;
-    text-align: center;
-    padding-bottom: 2rem;
-}
-.textoPrimerPanel{
-    font-size: 1.7rem;
-}
-.botonPrimerPanel{
-    font-family: Roboto, sans-serif;
-    text-align: center;
-    width: 50%;
-    background-color: #007145;
-    font-size: 1.6rem;
-    color: white;
-    padding: 0.6rem;
-    border-radius: 1.2rem;
-    transition-duration: 0.1s;
-    border: solid;
-    border-color: #007145;
-    transition: background-color 0.4s, color 0.4s, width 0.4s, font-size 0.4s;
-}
-.botonPrimerPanel:hover{
-    background-color: white;
-    color: #007145;
-    width: 60%;
-    font-size: 1.7rem;
-}
-/* Segundo panel Inicio */
-.segundoPanelInicio{
-    background-image: url(../imagenes/segundoPanelInicio.jpg);
-    background-size: 82%;
-    background-repeat: no-repeat;
-    background-position: initial;
-    grid-area: segundoPanelInicio;
-}
-.segundoPanelInicioCaja{
-    display: grid;
-    grid-template-areas: "segundoPanelInicioTitulo"
-    "segundoPanelInicioCards";
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr;
-    gap: 1rem;
-}
-.segundoPanelInicioImagenes{
-    height: 12rem;
-    width: 12rem;
-    border-style: solid;
-    border-width: 0.2rem;
-    border-radius: 2rem;
-    border-color: #007145;
-}
-.segundoPanelInicioCards{
-    font-family: Roboto, sans-serif;
-    font-size: 1.6rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 1rem;
-    grid-area: segundoPanelInicioCards;
-}
-.segundoPanelInicioCardsTexto{
-    background-color: white;
-    width: 12rem;
-    height: 4.5rem;
-    text-align: center;
-    border-style: solid;
-    border-color: #007145;
-    border-width: 0.2rem;
-    border-radius: 2rem;
-}
-.segundoPanelInicioTitulo{
-    font-family: Roboto, sans-serif;
-    font-size: 2.3rem;
-    padding: 1rem;
-    text-align: right;
-    margin-top: 6rem;
-    margin-bottom: 9rem;
-    margin-left: 19rem;
-    color: #007145;
-    grid-area: segundoPanelInicioTitulo;
-}
-/* Tercer Panel Inicio */
-.tercerPanelInicio{
-    background-image: url(../imagenes/tercerPanelInicio.jpg);
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: left;
-    grid-area: tercerPanelInicio;
-    height: 25rem;
-}
-.tercerPanelInicioTitulo{
-    font-family: Roboto, sans-serif;
-    font-size: 2.3rem;
-    padding: 1rem;
-    text-align: center;
-    color: #007145;
-}
-.tercerPanelInicioCaja{
-    margin-left: 19rem;
-    margin-top: 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
-    align-items: center;    font-size: 1.6rem;
-    color:#007145;
-    gap: 2rem;
-}
-.botonTercerPanel{
-    font-family: Roboto, sans-serif;
-    text-align: center;
-    width: 50%;
-    background-color: #007145;
-    font-size: 1.6rem;
-    color: white;
-    padding: 0.6rem;
-    border-radius: 1.2rem;
-    transition-duration: 0.1s;
-    border: solid;
-    border-color: #007145;
-    transition: background-color 0.4s, color 0.4s, width 0.4s, font-size 0.4s;
-}
-.botonTercerPanel:hover{
-    background-color: white;
-    color: #007145;
-    width: 60%;
-    font-size: 1.7rem;
 }
 /* css bootstrap */
 /* inicio sesión */
@@ -179,7 +33,7 @@ li{
 }
 a{
     text-decoration: none;
-    color: #007145;
+    color: $colorFont;
     transition: all 0s;
 }
 a:hover{
@@ -204,7 +58,7 @@ a:focus{
     transition: color 0.4s;
 }
 .hotSale:hover{
-    color: #007145;
+    color: $colorFont;
 }
 .topbarImagen{
     padding: 0.5rem;
@@ -219,7 +73,7 @@ a:focus{
 .topbar{
     padding: 0.5rem;
     font-size: 1.3rem;
-    color: #007145;
+    color: $colorFont;
     grid-area: topbar;
     display: grid;
     grid-template-areas: "logoVivero submenuInicio submenuInicio"
@@ -248,12 +102,12 @@ a:focus{
 .footerTitulo{
     padding: 1rem;
     border: 1rem;
-    color: #007145;
+    color: $colorFont;
 }
 /* css de imagenes, titulosh1 y flex */
 .tituloNuestrosProductos{
     padding: 2rem;
-    color: #007145;
+    color: $colorFont;
     font-size: 4rem;
     grid-area: titulo;
 }
@@ -276,7 +130,7 @@ a:focus{
 }
 .formItem{
     padding: 1.5rem;
-    color: #007145;
+    color: $colorFont;
 }
 .seccionesAcuario{
     display: flex;
@@ -290,207 +144,4 @@ a:focus{
 }
 .macetasPlasticas{
     grid-area: macetasPlasticas;
-}
-/* Contact */
-.descripcionContacto{
-    padding: 2rem;
-    margin: 2rem;
-    font-size: 1.6rem;
-    color: white;
-    background-color: #007145;
-}
-.formGrid{
-    font-size: 1.4rem;
-    display: grid;
-    grid-template-areas: "nombreApellido motivoConsulta"
-    "correoElectronico motivoConsulta" 
-    "telefono mensaje"
-    "ofertas mensaje"
-    "newsletter newsletter"
-    "botones botones";
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 15% 15% 15% 15% 10% 10%;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-}
-.nombreApellido{
-    padding: 1rem;
-    margin: 1rem;
-    border-style: solid;
-    border-width: 0.2rem;
-    border-color: #007145;
-    grid-area: nombreApellido;
-    display: flex;
-    flex-direction: column;
-}
-.correoElectronico{
-    padding: 1rem;
-    margin: 1rem;
-    border-style: solid;
-    border-width: 0.2rem;
-    border-color: #007145;
-    grid-area: correoElectronico;
-    display: flex;
-    flex-direction: column;
-}
-.telefono{
-    padding: 1rem;
-    margin: 1rem;
-    border-style: solid;
-    border-width: 0.2rem;
-    border-color: #007145;
-    grid-area: telefono;
-    display: flex;
-    flex-direction: column;
-}
-.motivoConsulta{
-    padding: 1rem;
-    margin: 1rem;
-    border-style: solid;
-    border-width: 0.2rem;
-    border-color: #007145;
-    grid-area: motivoConsulta;
-}
-.mensaje{
-    padding: 1rem;
-    margin: 1rem;
-    border-style: solid;
-    border-width: 0.2rem;
-    border-color: #007145;
-    grid-area: mensaje;
-}
-.ofertas{
-    padding: 1rem;
-    margin: 1rem;
-    border-style: solid;
-    border-width: 0.2rem;
-    border-color: #007145;
-    grid-area: ofertas;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.newsletter{
-    padding: 1rem;
-    margin: 1rem;
-    border-style: solid;
-    border-width: 0.2rem;
-    border-color: #007145;
-    grid-area: newsletter;
-}
-.botones{
-    padding: 1rem;
-    margin: 1rem;
-    border-style: solid;
-    border-width: 0.2rem;
-    border-color: #007145;
-    grid-area: botones;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-/* css reponsive */
-.headerResponsive{
-    display: grid;
-    grid-template-areas: "hotSale"
-    "topbar";
-    grid-template-rows: 20% 70%;
-}
-.mainResponsive{
-    display: grid;
-    grid-template-areas:        "primerPanelInicio"
-                        "segundoPanelInicio"
-                        "tercerPanelInicio";
-}
-.footerResponsive{
-    display: grid;
-    grid-template-areas: "footerHorarios"
-    "footerIconos";
-    grid-template-columns: 30%;
-    grid-template-rows: 48% 15%;
-    text-align: center;
-    background-image: url(../imagenes/Footer_imagen.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    margin-top: 2rem;
-    height: 16rem;
-}
-.mainResponsiveMacetas{
-    display: grid;
-    grid-template-areas: "titulo"
-    "fibrocemento"
-    "macetasPlasticas";
-}
-@media(min-width: 480px){
-    .headerResponsive{
-        grid-template-areas: "hotSale hotSale"
-                             "topbar topbar";
-        grid-template-columns: 20% 80%;
-    }
-    .botonesnavegacion{
-        padding: 1.5rem;
-    }
-    .mainResponsive{
-        grid-template-areas: "primerPanelInicio primerPanelInicio"
-        "segundoPanelInicio segundoPanelInicio"
-        "tercerPanelInicio tercerPanelInicio";
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 39% 41% 25%;
-    }
-    .footerResponsive{
-        grid-template-areas: "footerHorarios footerHorarios"
-        "footerIconos footerIconos";
-        grid-template-columns: 15% 15%;
-        grid-template-rows: 50% 50%;
-        margin-top: 4rem;
-    }
-    .mainResponsiveMacetas{
-        grid-template-areas: "titulo titulo"
-        "fibrocemento fibrocemento"
-        "macetasPlasticas macetasPlasticas";
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 15% 42% 45%;
-    }
-}
-@media(min-width: 768px){
-    .headerResponsive{
-        grid-template-areas: "hotSale hotSale hotSale"
-                             "topbar topbar topbar";
-        grid-template-columns: 20% 20% 60%;
-    }
-    .mainResponsive{
-        grid-template-areas: "primerPanelInicio primerPanelInicio primerPanelInicio"
-        "segundoPanelInicio segundoPanelInicio segundoPanelInicio"
-        "tercerPanelInicio tercerPanelInicio tercerPanelInicio";
-        grid-template-columns: 50% 25% 25%;
-        grid-template-rows: 39% 47% 43%;
-    }
-    .footerResponsive{
-        grid-template-areas: "footerHorarios footerHorarios footerHorarios"
-        "footerIconos footerIconos footerIconos";
-        grid-template-columns: 10% 10% 10%;
-        grid-template-rows: 50% 50%;
-        margin-top: 13rem;
-    }
-    .mainResponsiveMacetas{
-        grid-template-areas: "titulo titulo titulo"
-        "fibrocemento fibrocemento fibrocemento"
-        "macetasPlasticas macetasPlasticas macetasPlasticas";
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .tercerPanelInicio{
-        background-size: 36%
-    }
-}
-@media(min-width: 1024px){
-    .primerPanelInicio{
-        background-size: 55rem;
-    }
-    .segundoPanelInicio{
-        background-size: 70rem;
-    }
-    .tercerPanelInicio{
-        background-size: 40rem;
-    }
 }

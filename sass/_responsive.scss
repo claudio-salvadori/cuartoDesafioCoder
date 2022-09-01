@@ -1,0 +1,104 @@
+/* css reponsive */
+.headerResponsive{
+    display: grid;
+    grid-template-areas: "hotSale"
+    "topbar";
+    grid-template-rows: 20% 70%;
+}
+.mainResponsive{
+    display: grid;
+    grid-template-areas:        "primerPanelInicio"
+                        "segundoPanelInicio"
+                        "tercerPanelInicio";
+}
+.footerResponsive{
+    display: grid;
+    grid-template-areas: "footerHorarios"
+    "footerIconos";
+    grid-template-columns: 30%;
+    grid-template-rows: 48% 15%;
+    text-align: center;
+    background-image: url(../imagenes/Footer_imagen.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 2rem;
+    height: 16rem;
+}
+.mainResponsiveMacetas{
+    display: grid;
+    grid-template-areas: "titulo"
+    "fibrocemento"
+    "macetasPlasticas";
+}
+@media(min-width: 480px){
+    .headerResponsive{
+        grid-template-areas: "hotSale hotSale"
+                             "topbar topbar";
+        grid-template-columns: 20% 80%;
+    }
+    .botonesnavegacion{
+        padding: 1.5rem;
+    }
+    .mainResponsive{
+        grid-template-areas: "primerPanelInicio primerPanelInicio"
+        "segundoPanelInicio segundoPanelInicio"
+        "tercerPanelInicio tercerPanelInicio";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 39% 41% 25%;
+    }
+    .footerResponsive{
+        grid-template-areas: "footerHorarios footerHorarios"
+        "footerIconos footerIconos";
+        grid-template-columns: 15% 15%;
+        grid-template-rows: 50% 50%;
+        margin-top: 4rem;
+    }
+    .mainResponsiveMacetas{
+        grid-template-areas: "titulo titulo"
+        "fibrocemento fibrocemento"
+        "macetasPlasticas macetasPlasticas";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 15% 42% 45%;
+    }
+}
+@media(min-width: 768px){
+    .headerResponsive{
+        grid-template-areas: "hotSale hotSale hotSale"
+                             "topbar topbar topbar";
+        grid-template-columns: 20% 20% 60%;
+    }
+    .mainResponsive{
+        grid-template-areas: "primerPanelInicio primerPanelInicio primerPanelInicio"
+        "segundoPanelInicio segundoPanelInicio segundoPanelInicio"
+        "tercerPanelInicio tercerPanelInicio tercerPanelInicio";
+        grid-template-columns: 50% 25% 25%;
+        grid-template-rows: 39% 47% 43%;
+    }
+    .footerResponsive{
+        grid-template-areas: "footerHorarios footerHorarios footerHorarios"
+        "footerIconos footerIconos footerIconos";
+        grid-template-columns: 10% 10% 10%;
+        grid-template-rows: 50% 50%;
+        margin-top: 13rem;
+    }
+    .mainResponsiveMacetas{
+        grid-template-areas: "titulo titulo titulo"
+        "fibrocemento fibrocemento fibrocemento"
+        "macetasPlasticas macetasPlasticas macetasPlasticas";
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .tercerPanelInicio{
+        background-size: 36%
+    }
+}
+@media(min-width: 1024px){
+    .primerPanelInicio{
+        background-size: 55rem;
+    }
+    .segundoPanelInicio{
+        background-size: 70rem;
+    }
+    .tercerPanelInicio{
+        background-size: 40rem;
+    }
+}
